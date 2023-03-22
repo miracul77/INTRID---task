@@ -1,0 +1,441 @@
+
+*
+    box-sizing: border-box
+
+@font-face 
+    font-family: "RFDewi"
+    src: url('../fonts/RFDewi-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "RFDewi"
+    src: url('../fonts/RFDewi-Bold.ttf')
+    font-weight: bold
+    font-style: normal
+
+html
+    font-family: "RFDewi"
+    font-weight: regular
+    
+$color-wight: #FFFFFF
+$color-red: #DC1919
+$color-light-grey: #808080
+
+.container
+    max-width: 1400px
+    position: relative
+    overflow: hidden
+
+.main-section
+    position: relative
+    min-height: 400px
+    overflow: hidden
+    z-index: 0
+    padding-top: 12px
+    &__nav-container
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 50px
+        align-items: center
+    &__header
+        position: absolute
+        margin-top: -20px
+    
+.nav-menu
+    margin-left: 265px
+    &__list
+        display: flex
+        flex-direction: row
+        list-style: none
+    &__list-item
+        margin-right: 55px
+        font-size: 14px
+        &:last-child
+            margin-right: 0
+        a
+            text-decoration: none
+            color: black
+    &__button
+        border-color: red
+        width: 158px
+        height: 32px
+        color: $color-red
+        fint-size: 14px
+    
+.main-wrapper
+    position: relative
+    height: 568px
+    background-image: url(../img/main-fon.png)
+    &__tagline
+        position: absolute
+        top: 44px
+        left: 58px
+        font-size: 50px
+        color: $color-wight
+        z-index: 1
+    &__description
+        position: absolute
+        z-index: 2
+        top: 88px
+        right: 40px
+        font-size: 14px
+        color: $color-wight
+    &__cards-box
+        display: flex
+        align-items: flex-end
+        height: 100%
+        justify-content: space-evenly
+        position: relative
+        bottom: 1000px
+    &__select-flat
+        position: relative
+        top: 190px
+        left: 70px
+        z-index: 1
+    &__select-room
+        position: relative
+        top: -190px
+        left: 293px
+        z-index: 1
+    &__price-block
+        position: relative
+        top: -200px
+        left: 158px
+    &__select-city
+        position: relative
+        top: -464px
+        left: 508.5px
+    &__find-btn
+        position: relative
+        width: 133px
+        height: 49px
+        top: -519px
+        left: 827.5px
+        background-color: $color-red
+        color: $color-wight
+    &__block
+        background-color: $color-wight
+        height: 218px
+        width: 1400px
+        position: absolute
+        opacity: 0
+        z-index: 3
+    &__boxes
+        display: flex
+    &__srting-select
+        position: relative
+        top: 38px
+
+.box-1
+    list-style: none
+    margin-right: 70px
+
+.box-item
+    margin-bottom: 10px
+        
+.block-1
+    background-color: $color-wight
+    width: 225px
+    height: 320px
+    opacity: 0
+    &__btns
+        padding: 10px
+    &__list
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        list-style: none
+        margin-left: -20px
+        padding-left: 35px
+
+.block-2
+    background-color: $color-wight
+    width: 300px
+    height: 140px
+    opacity: 0
+    &__rating-box
+        display: flex
+        flex-direction: row
+    &__list
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        list-style: none
+        margin-left: -20px
+        margin-top: 10px
+
+.block-3
+    background-color: $color-wight
+    width: 350px
+    height: 204px
+    opacity: 0
+    &__str
+        width: 280px
+        height: 50px
+        margin-top: 35px
+        margin-left: 30px
+        border-color: $color-light-grey
+
+.block-4
+    width: 456px
+    height: 60px
+    &__title
+        color: $color-light-grey
+    &__text
+        color: black
+    
+
+.points-item
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    border: 1px solid black
+    border-radius: 2px
+    margin: 10px
+    &:last-child
+        margin-right: 0px
+
+
+.checkselect
+    height: 60px
+    width: 225px
+    border: 1px solid $color-light-grey
+
+.checkRoom
+    height: 60px
+    width: 160px
+    color: $color-light-grey
+    border: 1px solid $color-light-grey
+.priceBtn
+    height: 60px
+    width: 351px
+    border: 1px solid $color-light-grey
+        
+.cards-item
+    position: relative
+    width: 413px
+    height: 169px
+    background-color: $color-red
+    display: flex
+    margin-right: 20px
+    &:last-child
+            margin-right: 0
+    &__img
+        position: absolute
+        height: 169px
+        width: 191px
+        right: 0
+    &__title
+        color: white
+        font-size: 18px
+        margin-top: 28px
+        margin-left: 17px
+    &__text
+        color: white
+        font-size: 14px
+        margin-top: 22px
+
+.cards-item_grey
+    background-color: #3E3E3E
+
+.cards-item_blue
+    background-color: #416494
+
+.second-section
+    padding: 20px
+    overflow: hidden
+    min-height: 500px
+    &__btn
+        border-color: $color-red
+        width: 200px
+        height: 40px
+        color: $color-red
+        position: absolute
+        margin-top: -86px
+        margin-left: 1110px
+    &__carousel-slide
+    &__carousel-item
+        width: 1000px
+        height: 750px
+
+.icons-arrow
+    width: 10px
+    height: 10px
+    margin-top: 130px
+    margin-left: -200px
+
+.footer
+    &__container
+        min-height: 206px
+        background-color: #3D3D3D
+        max-width: 1400px
+        position: relative
+    &__logo
+        position: absolute
+        margin-top: 20px
+    &__hr
+        margin: 1rem 0
+        color: inherit
+        border: 0
+        border-top: 4px solid #606060
+        opacity: .25
+        margin-top: 50px
+    &__text
+        margin-top: 35px
+        color: #B3B3B3
+    &__icon
+        position: absolute
+        margin-left: 1270px
+        margin-top: -30px
+
+.footer-container
+    &__nav-container
+        position: relative
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+
+
+.nav-menu2
+    margin-left: 265px
+    &__list
+        display: flex
+        flex-direction: row
+        list-style: none
+        margin-top: 25px
+    &__list-item
+        margin-right: 55px
+        font-size: 14px
+        color: $color-wight
+        &:last-child
+            margin-right: 0
+        a
+            text-decoration: none
+            color: black
+    &__button
+        width: 158px
+        height: 32px
+        color: $color-wight
+        background-color: $color-red
+        fint-size: 14px
+
+@media (max-width: 376px)
+    .container  
+        width: 100%
+    .nav-menu
+        position: fixed
+        top: 0
+        right: -100%
+        width: 60%
+        height: 100vh
+        background: $color-wight
+        z-index: 20
+        transition: 1s all
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 100%
+    .hamburger
+        position: fixed
+        width: 30px
+        top: 40px
+        right: 30px
+        height: 14px
+        z-index: 30
+        span  
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0
+    .hamburger_active
+        span    
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+    .nav-menu_active
+        right: 0px
+
+    .main-section
+        position: relative
+        min-height: 400px
+        overflow: hidden
+        z-index: 0
+        padding-top: 12px
+        &__nav-container
+            position: relative
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            height: 50px
+            align-items: center
+        &__header
+            position: absolute
+            margin-top: -20px
+            margin-left: 50px
+    .main-wrapper
+        position: relative
+        height: 500px
+        background-color: #3D3D3D
+        &__block
+            display: none
+        &__tagline
+            position: absolute
+            top: 53px
+            left: 21px
+            font-size: 30px
+            color: $color-wight
+            z-index: 1
+        &__description 
+            position: absolute
+            z-index: 2
+            top: 142px
+            right: 51px
+            font-size: 10px
+            color: $color-wight
+        &__select-flat
+            display: none
+        .checkRoom
+            display: none  
+        &__price-block
+            display: none
+        &__select-city
+            position: relative
+            top: 176px
+            left: -286.5px
+        &__find-btn
+            top: 121px
+            left: -85.5px
+        &__select-room
+            top: -112px
+    .block-4
+        width: 339px
+        height: 60px
+
+    .second-section
+        padding: 20px
+        overflow: hidden
+        min-height: 396px
+
+    .nav-menu2
+        display: none
+
+    .footer
+        &__icon
+            position: absolute
+            margin-left: 310px
+            margin-top: -163px

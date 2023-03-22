@@ -1,0 +1,657 @@
+/* line 2, ../../INTRID - task/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "RFDewi";
+  src: url("../fonts/RFDewi-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RFDewi";
+  src: url("../fonts/RFDewi-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 17, ../../INTRID - task/src/sass/style.sass */
+html {
+  font-family: "RFDewi";
+  font-weight: regular;
+}
+
+/* line 25, ../../INTRID - task/src/sass/style.sass */
+.container {
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 30, ../../INTRID - task/src/sass/style.sass */
+.main-section {
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+  z-index: 0;
+  padding-top: 12px;
+}
+
+/* line 36, ../../INTRID - task/src/sass/style.sass */
+.main-section__nav-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+/* line 43, ../../INTRID - task/src/sass/style.sass */
+.main-section__header {
+  position: absolute;
+  margin-top: -20px;
+}
+
+/* line 47, ../../INTRID - task/src/sass/style.sass */
+.nav-menu {
+  margin-left: 265px;
+}
+
+/* line 49, ../../INTRID - task/src/sass/style.sass */
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/* line 53, ../../INTRID - task/src/sass/style.sass */
+.nav-menu__list-item {
+  margin-right: 55px;
+  font-size: 14px;
+}
+
+/* line 56, ../../INTRID - task/src/sass/style.sass */
+.nav-menu__list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 58, ../../INTRID - task/src/sass/style.sass */
+.nav-menu__list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 61, ../../INTRID - task/src/sass/style.sass */
+.nav-menu__button {
+  border-color: red;
+  width: 158px;
+  height: 32px;
+  color: #dc1919;
+  font-size: 14px;
+}
+
+/* line 68, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper {
+  position: relative;
+  height: 568px;
+  background-image: url(../img/main-fon.png);
+}
+
+/* line 72, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__tagline {
+  position: absolute;
+  top: 44px;
+  left: 58px;
+  font-size: 50px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* line 79, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__description {
+  position: absolute;
+  z-index: 2;
+  top: 88px;
+  right: 40px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* line 86, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__cards-box {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 1000px;
+}
+
+/* line 93, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__select-flat {
+  position: relative;
+  top: 190px;
+  left: 70px;
+  z-index: 1;
+}
+
+/* line 98, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__select-room {
+  position: relative;
+  top: -190px;
+  left: 293px;
+  z-index: 1;
+}
+
+/* line 103, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__price-block {
+  position: relative;
+  top: -200px;
+  left: 158px;
+}
+
+/* line 107, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__select-city {
+  position: relative;
+  top: -464px;
+  left: 508.5px;
+}
+
+/* line 111, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__find-btn {
+  position: relative;
+  width: 133px;
+  height: 49px;
+  top: -519px;
+  left: 827.5px;
+  background-color: #dc1919;
+  color: #ffffff;
+}
+
+/* line 119, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__block {
+  background-color: #ffffff;
+  height: 218px;
+  width: 1400px;
+  position: absolute;
+  opacity: 0;
+  z-index: 3;
+}
+
+/* line 126, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__boxes {
+  display: flex;
+}
+
+/* line 128, ../../INTRID - task/src/sass/style.sass */
+.main-wrapper__srting-select {
+  position: relative;
+  top: 38px;
+}
+
+/* line 132, ../../INTRID - task/src/sass/style.sass */
+.box-1 {
+  list-style: none;
+  margin-right: 70px;
+}
+
+/* line 136, ../../INTRID - task/src/sass/style.sass */
+.box-item {
+  margin-bottom: 10px;
+}
+
+/* line 139, ../../INTRID - task/src/sass/style.sass */
+.block-1 {
+  background-color: #ffffff;
+  width: 225px;
+  height: 320px;
+  opacity: 0;
+}
+
+/* line 144, ../../INTRID - task/src/sass/style.sass */
+.block-1__btns {
+  padding: 10px;
+}
+
+/* line 146, ../../INTRID - task/src/sass/style.sass */
+.block-1__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  margin-left: -20px;
+  padding-left: 35px;
+}
+
+/* line 154, ../../INTRID - task/src/sass/style.sass */
+.block-2 {
+  background-color: #ffffff;
+  width: 300px;
+  height: 140px;
+  opacity: 0;
+}
+
+/* line 159, ../../INTRID - task/src/sass/style.sass */
+.block-2__rating-box {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 162, ../../INTRID - task/src/sass/style.sass */
+.block-2__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  list-style: none;
+  margin-left: -20px;
+  margin-top: 10px;
+}
+
+/* line 170, ../../INTRID - task/src/sass/style.sass */
+.block-3 {
+  background-color: #ffffff;
+  width: 350px;
+  height: 204px;
+  opacity: 0;
+}
+
+/* line 175, ../../INTRID - task/src/sass/style.sass */
+.block-3__str {
+  width: 280px;
+  height: 50px;
+  margin-top: 35px;
+  margin-left: 30px;
+  border-color: #808080;
+}
+
+/* line 182, ../../INTRID - task/src/sass/style.sass */
+.block-4 {
+  width: 456px;
+  height: 60px;
+}
+
+/* line 185, ../../INTRID - task/src/sass/style.sass */
+.block-4__title {
+  color: #808080;
+}
+
+/* line 187, ../../INTRID - task/src/sass/style.sass */
+.block-4__text {
+  color: black;
+}
+
+/* line 191, ../../INTRID - task/src/sass/style.sass */
+.points-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 10px;
+}
+
+/* line 200, ../../INTRID - task/src/sass/style.sass */
+.points-item:last-child {
+  margin-right: 0px;
+}
+
+/* line 204, ../../INTRID - task/src/sass/style.sass */
+.checkselect {
+  height: 60px;
+  width: 225px;
+  border: 1px solid #808080;
+}
+
+/* line 209, ../../INTRID - task/src/sass/style.sass */
+.checkRoom {
+  height: 60px;
+  width: 160px;
+  color: #808080;
+  border: 1px solid #808080;
+}
+
+/* line 214, ../../INTRID - task/src/sass/style.sass */
+.priceBtn {
+  height: 60px;
+  width: 351px;
+  border: 1px solid #808080;
+}
+
+/* line 219, ../../INTRID - task/src/sass/style.sass */
+.cards-item {
+  position: relative;
+  width: 413px;
+  height: 169px;
+  background-color: #dc1919;
+  display: flex;
+  margin-right: 20px;
+}
+
+/* line 226, ../../INTRID - task/src/sass/style.sass */
+.cards-item:last-child {
+  margin-right: 0;
+}
+
+/* line 228, ../../INTRID - task/src/sass/style.sass */
+.cards-item__img {
+  position: absolute;
+  height: 169px;
+  width: 191px;
+  right: 0;
+}
+
+/* line 233, ../../INTRID - task/src/sass/style.sass */
+.cards-item__title {
+  color: white;
+  font-size: 18px;
+  margin-top: 28px;
+  margin-left: 17px;
+}
+
+/* line 238, ../../INTRID - task/src/sass/style.sass */
+.cards-item__text {
+  color: white;
+  font-size: 14px;
+  margin-top: 22px;
+}
+
+/* line 243, ../../INTRID - task/src/sass/style.sass */
+.cards-item_grey {
+  background-color: #3e3e3e;
+}
+
+/* line 246, ../../INTRID - task/src/sass/style.sass */
+.cards-item_blue {
+  background-color: #416494;
+}
+
+/* line 249, ../../INTRID - task/src/sass/style.sass */
+.second-section {
+  padding: 20px;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+/* line 253, ../../INTRID - task/src/sass/style.sass */
+.second-section__btn {
+  border-color: #dc1919;
+  width: 200px;
+  height: 40px;
+  color: #dc1919;
+  position: absolute;
+  margin-top: -86px;
+  margin-left: 1110px;
+}
+
+/* line 262, ../../INTRID - task/src/sass/style.sass */
+.second-section__carousel-item {
+  width: 1000px;
+  height: 750px;
+}
+
+/* line 266, ../../INTRID - task/src/sass/style.sass */
+.icons-arrow {
+  width: 10px;
+  height: 10px;
+  margin-top: 130px;
+  margin-left: -200px;
+}
+
+/* line 273, ../../INTRID - task/src/sass/style.sass */
+.footer__container {
+  min-height: 206px;
+  background-color: #3d3d3d;
+  max-width: 1400px;
+  position: relative;
+}
+
+/* line 278, ../../INTRID - task/src/sass/style.sass */
+.footer__logo {
+  position: absolute;
+  margin-top: 20px;
+}
+
+/* line 281, ../../INTRID - task/src/sass/style.sass */
+.footer__hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 4px solid #606060;
+  opacity: 0.25;
+  margin-top: 50px;
+}
+
+/* line 288, ../../INTRID - task/src/sass/style.sass */
+.footer__text {
+  margin-top: 35px;
+  color: #b3b3b3;
+}
+
+/* line 291, ../../INTRID - task/src/sass/style.sass */
+.footer__icon {
+  position: absolute;
+  margin-left: 1270px;
+  margin-top: -30px;
+}
+
+/* line 297, ../../INTRID - task/src/sass/style.sass */
+.footer-container__nav-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 305, ../../INTRID - task/src/sass/style.sass */
+.nav-menu2 {
+  margin-left: 265px;
+}
+
+/* line 307, ../../INTRID - task/src/sass/style.sass */
+.nav-menu2__list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 25px;
+}
+
+/* line 312, ../../INTRID - task/src/sass/style.sass */
+.nav-menu2__list-item {
+  margin-right: 55px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* line 316, ../../INTRID - task/src/sass/style.sass */
+.nav-menu2__list-item:last-child {
+  margin-right: 0;
+}
+
+/* line 318, ../../INTRID - task/src/sass/style.sass */
+.nav-menu2__list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 321, ../../INTRID - task/src/sass/style.sass */
+.nav-menu2__button {
+  width: 158px;
+  height: 32px;
+  color: #ffffff;
+  background-color: #dc1919;
+  font-size: 14px;
+}
+
+@media (max-width: 376px) {
+  /* line 329, ../../INTRID - task/src/sass/style.sass */
+  .container {
+    width: 100%;
+  }
+  /* line 331, ../../INTRID - task/src/sass/style.sass */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 20;
+    transition: 1s all;
+  }
+  /* line 340, ../../INTRID - task/src/sass/style.sass */
+  .nav-menu__list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  /* line 345, ../../INTRID - task/src/sass/style.sass */
+  .hamburger {
+    position: fixed;
+    width: 30px;
+    top: 40px;
+    right: 30px;
+    height: 14px;
+    z-index: 30;
+  }
+  /* line 352, ../../INTRID - task/src/sass/style.sass */
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: black;
+    margin-bottom: 4px;
+    transition: 1s all;
+  }
+  /* line 359, ../../INTRID - task/src/sass/style.sass */
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  /* line 362, ../../INTRID - task/src/sass/style.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 364, ../../INTRID - task/src/sass/style.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 366, ../../INTRID - task/src/sass/style.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 368, ../../INTRID - task/src/sass/style.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 370, ../../INTRID - task/src/sass/style.sass */
+  .nav-menu_active {
+    right: 0px;
+  }
+  /* line 373, ../../INTRID - task/src/sass/style.sass */
+  .main-section {
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+    z-index: 0;
+    padding-top: 12px;
+  }
+  /* line 379, ../../INTRID - task/src/sass/style.sass */
+  .main-section__nav-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+  }
+  /* line 386, ../../INTRID - task/src/sass/style.sass */
+  .main-section__header {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 50px;
+  }
+  /* line 390, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper {
+    position: relative;
+    height: 500px;
+    background-color: #3d3d3d;
+  }
+  /* line 394, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper__block {
+    display: none;
+  }
+  /* line 396, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper__tagline {
+    position: absolute;
+    top: 53px;
+    left: 21px;
+    font-size: 30px;
+    color: #ffffff;
+    z-index: 1;
+  }
+  /* line 403, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper__description {
+    position: absolute;
+    z-index: 2;
+    top: 142px;
+    right: 51px;
+    font-size: 10px;
+    color: #ffffff;
+  }
+  /* line 410, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper__select-flat {
+    display: none;
+  }
+  /* line 412, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper .checkRoom {
+    display: none;
+  }
+  /* line 414, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper__price-block {
+    display: none;
+  }
+  /* line 416, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper__select-city {
+    position: relative;
+    top: 176px;
+    left: -286.5px;
+  }
+  /* line 420, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper__find-btn {
+    top: 121px;
+    left: -85.5px;
+  }
+  /* line 423, ../../INTRID - task/src/sass/style.sass */
+  .main-wrapper__select-room {
+    top: -112px;
+  }
+  /* line 425, ../../INTRID - task/src/sass/style.sass */
+  .block-4 {
+    width: 339px;
+    height: 60px;
+  }
+  /* line 429, ../../INTRID - task/src/sass/style.sass */
+  .second-section {
+    padding: 20px;
+    overflow: hidden;
+    min-height: 396px;
+  }
+  /* line 434, ../../INTRID - task/src/sass/style.sass */
+  .nav-menu2 {
+    display: none;
+  }
+  /* line 438, ../../INTRID - task/src/sass/style.sass */
+  .footer__icon {
+    position: absolute;
+    margin-left: 310px;
+    margin-top: -163px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
